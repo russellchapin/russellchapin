@@ -101,17 +101,7 @@ function copyrightYear() {
   var d = new Date();
     document.getElementById("year_copyright").innerHTML = d.getFullYear();
 }
-/*
-function imageFadeIn(){
-   $('#myobj')
-      .delay(1800)
-      .queue( function(next){ 
-        $('#myobj').addClass('image_fader');
-    
-    });
-}
-*/
-/*Splash Screen Scroll*/
+
 $(".inthemiddle").click(function() {
     $('html,body').animate({
         scrollTop: $("#first").offset().top - $('#home_nav').height()},
