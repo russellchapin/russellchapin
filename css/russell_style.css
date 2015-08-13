@@ -21,7 +21,7 @@ body{
 	text-align:center;	
 	padding:0 !important;
 	top:0;
-	background:#ffffff;
+	background: #F4F2F2;
 }
 
 html{
@@ -31,7 +31,7 @@ html{
 	padding:0 !important;
 	height:100%;
 	top:0;
-	background:#ffffff;
+	background: #F4F2F2;
 	overflow-x:hidden;
 }
 
@@ -59,8 +59,6 @@ html{
 	font-size: 2.6em;
 	font-style: oblique;
 }
-
-
 
 nav > ul > li > a{
 	font-family:"proxima_nova_scosfextrabold",helvetica,arial,sans-serif;
@@ -171,7 +169,7 @@ footer{
 	width:100%;
 	padding-top: 40px;
 	line-height:34px;
-	background-color: #F4F2F2;
+	background-color: #FFFFFF;
 	padding-bottom: 40px;
 	position:relative;
 }
@@ -205,7 +203,7 @@ footer{
 	padding-top: 40px;
 	display: inline-block;
 	position: relative;
-	background-color: #ffffff;
+	background: #F4F2F2;
 	height: auto;
 
 }
@@ -222,7 +220,7 @@ footer{
 
 #third{
 	clear:both;
-	background-color: #F4F2F2;
+	background-color: #ffffff;
 	padding-top:40px;
 	padding-bottom:50px;
 	position:relative;
@@ -319,8 +317,10 @@ footer{
     margin: 0 20px 40px 20px;
     width: 330px;
     float: left;
-    border: solid 1px #eeeeee;
     background: #ffffff;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
 }
 
 .contain{
@@ -566,10 +566,35 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 768px) {
-	#myobj{
-		max-width:768px;
+	#myobj {
+		width: 100%;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-attachment: inherit;
+		background-position: center;
+		background-repeat:no-repeat;
 	}
 
+	#Layer_1 {
+	    display: inline-block;
+		position: absolute;
+		left: 50%;
+		top:50%;
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width:100%;
+		max-width:768px;
+		min-width:300px;
+	}
+
+	#home_screen_load {
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+	}
 
 	.block {
 		display: block;
@@ -591,34 +616,6 @@ input[type="submit"] {
 
 @media screen and (max-width: 667px) {
 
-	#myobj {
-		width: 100%;
-		-webkit-background-size: cover;
-		background-size: cover;
-		background-attachment: inherit;
-		background-position: center;
-		background-repeat:no-repeat;
-	}
-
-	#Layer_1 {
-	    display: inline-block;
-		position: absolute;
-		left: 50%;
-		top:50%;
-		-moz-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		-o-transform: translate(-50%, -50%);
-		-webkit-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		width:100%;
-		min-width:300px;
-	}
-
-	#home_screen_load {
-		margin: 0 auto;
-		width: 100%;
-		text-align: center;
-	}
 
 	.contain {
 		width:100%;
